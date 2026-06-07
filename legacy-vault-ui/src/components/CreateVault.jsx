@@ -358,8 +358,8 @@ export default function CreateVault() {
                 <div className="lv-status-error mb-4">
                   <p className="font-semibold">Recovery service offline</p>
                   <p className="mt-1">
-                    Start the oracle backend at {ORACLE_BASE_URL}, then check
-                    the status again.
+                    Could not reach the recovery oracle at {ORACLE_BASE_URL}.
+                    Retry in a moment if the free backend is waking up.
                   </p>
                   <button
                     type="button"
