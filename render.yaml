@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: legacy-vault-oracle
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CHAIN_ID
+        value: "11155111"
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ORACLE_PRIVATE_KEY
+        sync: false
+      - key: PROXY_ADDRESS
+        sync: false
+      - key: RPC_URL
+        sync: false
+      - key: FRONTEND_ORIGINS
+        sync: false
+      - key: WEBAUTHN_RP_ID
+        sync: false

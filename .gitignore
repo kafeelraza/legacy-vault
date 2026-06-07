@@ -12,3 +12,13 @@ docs/
 
 # Dotenv file
 .env
+legacy-vault-ui/.env
+
+# Node / frontend output
+node_modules/
+legacy-vault-ui/node_modules/
+legacy-vault-ui/dist/
+npm-debug.log*
+
+# Local screenshots and reports
+legacy-vault-ui/*.png
